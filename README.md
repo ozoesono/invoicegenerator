@@ -2,23 +2,30 @@
 * [Problem Overview](#problem-overview)
 * [Solution Design](#solution-design)
 * [Technologies Used](#technologies-used)
+* [Specific Libraries Used](#specific-libraries-used)
 * [Important Notes](#important-notes)
 * [Running the Application](#running-the-application)
 
 ## Problem Overview
-This project is simple Lorem ipsum dolor generator.
+Designing an application that can generate invoices from SMS feeder files.
 
 ## Solution Design
-This project is simple Lorem ipsum dolor generator.
+
 	
 ## Technologies Used
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* Java 8 as the development language
+* Gradle as the build automation tool and package manager
+	
+## Specific Libraries Used
+Important Java Libraries used for the project:
+* Lombok: Used to reduce boiler plate code associated with Java
+* Apache Commons CSV: Used for Parsing CSV/Excel files
+* Freemarker: Used for generating HTML files
 	
 ## Important Notes
-To run this project, install it locally using npm:
+My solution has not provided any extensive error handling, nor have I created custom Exception classes for the application. I felt this was outside the scope of the problem domain.
+
 
 ## Running the Application
 This project is simple Lorem ipsum dolor generator.
