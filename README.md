@@ -6,6 +6,7 @@
 * [Important Notes](#important-notes)
 * [Running the Application](#running-the-application)
 * [Example Output From Running Application](#example-output-from-running-application)
+* [Improvements](#improvements)
 
 ## Problem Overview
 Designing an application that can generate invoices from SMS feeder files.
@@ -54,4 +55,9 @@ invoicegenerator/src/main/out
 
 ## Example Output From Running Application
 ![alt text](https://i.ibb.co/brvJPMr/Screenshot-2020-10-25-at-19-45-17.png)
+
+## Improvements
+* The location of the output folder can be made to be configurable using for instance, Apache Commons Configuration. This will thus make the application more configurable as we would be able to externalise the output location to a properties file. This would also aid in testing, as it would make it easier to configure the output location for unit tests. 
+
+I could have done this but didn't want to make the application more complicated for its intended purpose.
 
