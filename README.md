@@ -5,6 +5,7 @@
 * [Specific Libraries Used](#specific-libraries-used)
 * [Important Notes](#important-notes)
 * [Running the Application](#running-the-application)
+* [Example Output From Running Application](#example-output-from-running-application)
 
 ## Problem Overview
 Designing an application that can generate invoices from SMS feeder files.
