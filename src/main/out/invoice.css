@@ -1,0 +1,32 @@
+table, th, td {
+    border: 1px lightblue solid;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+    background-color: #336699;
+    color: white;
+}
+
+tr:hover {
+    background-color: aliceblue;
+}
+
+tr:nth-child(even) {
+    background-color: lightcyan;
+}
+
+.bold {
+    font-weight: bold;
+}
+

@@ -16,7 +16,6 @@
 *.ids
 *.orig
 classes/
-out/
 
 ######################
 # Gradle
