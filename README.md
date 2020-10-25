@@ -44,7 +44,7 @@ This will create a an InvoiceGenerator-1.0.jar file.
 
 4. Execute this command:
 ```
-$ java -jar invoicegenerator/build/libs/InvoiceGenerator-1.0.jar "Tenant 1" "Tenant 2" "Tenant 3" "Tenant 4"
+$ java -jar build/libs/InvoiceGenerator-1.0.jar "Tenant 1" "Tenant 2" "Tenant 3" "Tenant 4"
 ```
 This will create four HTML invoices, one for each Tenant. This can be seen in this folder:
 ```
