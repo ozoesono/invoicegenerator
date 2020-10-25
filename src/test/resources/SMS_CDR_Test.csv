@@ -1,0 +1,6 @@
+msg_id,tenant_name,sender_id,number,sent_date,status,msg_length
+1,Tenant 1,Test1,44777xx,23/10/2020 16:22,OK,1
+2,Tenant 2,Test2,3377xx,23/10/2020 16:22,OK,2
+3,Tenant 3,Test3,9174xx,23/10/2020 16:21,OK,2
+4,Tenant 3,Test4,44782xxx,23/10/2020 16:20,OK,3
+5,Tenant 4,Test5,4477xxx,23/10/2020 16:20,ERROR,1
