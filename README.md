@@ -28,8 +28,6 @@ My solution has not provided any extensive error handling, nor have I created cu
 
 
 ## Running the Application
-This project is simple Lorem ipsum dolor generator.
-	
 First Clone the Repository:
 ```
 $ git clone https://github.com/ozoesono/invoicegenerator.git
