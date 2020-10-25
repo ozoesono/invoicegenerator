@@ -28,15 +28,19 @@ My solution has not provided any extensive error handling, nor have I created cu
 
 
 ## Running the Application
-First Clone the Repository:
+1. Install Java 8 if you do not already have it installed.
+
+2. Clone the Repository:
 ```
 $ git clone https://github.com/ozoesono/invoicegenerator.git
 ```
-Then go into the invoicegenerator folder and run:
+3. Go into the "invoicegenerator" folder and run:
 ```
 $ ./gradlew jar
 ```
-This will create a an InvoiceGenerator-1.0.jar file. Execute this file:
+This will create a an InvoiceGenerator-1.0.jar file. 
+
+4. Execute this file:
 ```
 $ java -jar invoicegenerator/build/libs/InvoiceGenerator-1.0.jar "Tenant 1" "Tenant 2" "Tenant 3" "Tenant 4"
 ```
@@ -44,4 +48,4 @@ This will create four invoices, one for each Tenant. This can be seen in this fo
 ```
 invoicegenerator/src/main/out
 ```
-T
+
