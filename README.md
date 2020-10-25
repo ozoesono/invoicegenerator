@@ -30,10 +30,20 @@ My solution has not provided any extensive error handling, nor have I created cu
 ## Running the Application
 This project is simple Lorem ipsum dolor generator.
 	
-
+First Clone the Repository:
 ```
 $ git clone https://github.com/ozoesono/invoicegenerator.git
-$ Go into the invoicegenerator folder and run:
+```
+Then go into the invoicegenerator folder and run:
+```
 $ ./gradlew jar
-$ ./gradlew jar
-
+```
+This will create a an InvoiceGenerator-1.0.jar file. Execute this file:
+```
+$ java -jar invoicegenerator/build/libs/InvoiceGenerator-1.0.jar "Tenant 1" "Tenant 2" "Tenant 3" "Tenant 4"
+```
+This will create four invoices, one for each Tenant. This can be seen in this folder:
+```
+invoicegenerator/src/main/out
+```
+T
