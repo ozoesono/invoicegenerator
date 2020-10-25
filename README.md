@@ -16,6 +16,8 @@ Designing an application that can generate invoices from SMS feeder files.
 Project is created with:
 * Java 8 as the development language
 * Gradle as the build automation tool and package manager
+* HTML for creating the invoices
+* CSS for basic styling of the invoices
 	
 ## Specific Libraries Used
 Important Java Libraries used for the project:
@@ -40,11 +42,11 @@ $ ./gradlew jar
 ```
 This will create a an InvoiceGenerator-1.0.jar file. 
 
-4. Execute this file:
+4. Execute this command:
 ```
 $ java -jar invoicegenerator/build/libs/InvoiceGenerator-1.0.jar "Tenant 1" "Tenant 2" "Tenant 3" "Tenant 4"
 ```
-This will create four invoices, one for each Tenant. This can be seen in this folder:
+This will create four HTML invoices, one for each Tenant. This can be seen in this folder:
 ```
 invoicegenerator/src/main/out
 ```
