@@ -32,14 +32,14 @@ public class InvoiceGeneratorImpl implements InvoiceGenerator {
     private static final Logger LOGGER = java.util.logging.Logger.getLogger(InvoiceGeneratorImpl.class.getName());
     private final SmsCdrParser smsCdrParser;
     private final InvoiceService invoiceService;
-    private final String smsCmdSourceFile;
+    private final String smsCdrSourceFile;
     private static final String INVOICE_TEMPLATE_LOCATION = "template/invoice.ftl";
     private static final String INVOICE_OUTPUT_FILE = "src/main/out/Invoice-%s.html";
     private static final String INVOICE_PLACEHOLDER = "invoice";
 
     @Override
-    public void generateInvoices(List<String> tenantNames) throws IOException, TemplateException {
-        List<SmsCdr> smsCdrList = smsCdrParser.parseSmsCdr(smsCmdSourceFile);
+    public boolean generateInvoices(List<String> tenantNames) throws IOException, TemplateException {
+        List<SmsCdr> smsCdrList = smsCdrParser.parseSmsCdr(smsCdrSourceFile);
         LOGGER.info(Infos.INVOICE_GENERATION_START);
         // Generate invoice for every tenant
         for (String tenantName : tenantNames) {
@@ -49,6 +49,7 @@ public class InvoiceGeneratorImpl implements InvoiceGenerator {
             generateInvoice(tenantSmsCdrList);
         }
         LOGGER.info(Infos.INVOICE_GENERATION_END);
+        return true;
     }
 
     private void generateInvoice(List<SmsCdr> smsCdrList) throws IOException, TemplateException {

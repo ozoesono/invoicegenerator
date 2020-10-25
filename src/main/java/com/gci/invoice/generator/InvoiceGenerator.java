@@ -9,5 +9,5 @@ import java.util.List;
  * This class is used to generate invoices for customers.
  */
 public interface InvoiceGenerator {
-    void generateInvoices(List<String> tenantNames) throws IOException, TemplateException;
+    boolean generateInvoices(List<String> tenantNames) throws IOException, TemplateException;
 }
