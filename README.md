@@ -13,6 +13,14 @@ Designing an application that can generate invoices from SMS feeder files.
 
 ## Solution Design
 ![alt text](https://i.ibb.co/qJm7rh7/Screenshot-2020-10-25-at-18-45-01.png)
+The solution consists of a main Java Application which is run from the terminal. The application processes an SMS CDR file which is stored in a specific location.
+
+The first thing that is done, is to parse the SMS CDR file (This is a CSV file). To do this we implement an SmsCdrParser. This parser reads the CSV file, and creates a Java model which maps one-to-one with the elements of the SMS CDR file entries. This Model is called SmsCdr.java. The SmsCdrParser utilises the Apache Commons CSV Library.
+
+The next component of interest, is the InvoiceService. This component creates a Java model - Invoice, from the list of SmsCdrs created by the SmsCdrParser. The invoice acts as a wrapper for our final outputted invoice, as it has all the details needed to create our final invoice. The InvoiceService also does all the cost calculations (Note the calculation was not externalised to another component, as the InvoiceService was pretty minimalist in its current functionality, and so we decided to keep the cost calculation functionality in the InvoiceService).
+
+The last key component is the InvoiceGenerator. This component does the actual creation of the HTML Invoice for the customers. This component utilises the Freemarker Library for the creation of the final invoice outputs.
+
 	
 ## Technologies Used
 Project is created with:
