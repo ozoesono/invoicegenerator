@@ -10,7 +10,7 @@
 Designing an application that can generate invoices from SMS feeder files.
 
 ## Solution Design
-Try this markdown: ![alt text](https://i.ibb.co/qJm7rh7/Screenshot-2020-10-25-at-18-45-01.png)
+![alt text](https://i.ibb.co/qJm7rh7/Screenshot-2020-10-25-at-18-45-01.png)
 	
 ## Technologies Used
 Project is created with:
@@ -50,4 +50,7 @@ This will create four HTML invoices, one for each Tenant. This can be seen in th
 ```
 invoicegenerator/src/main/out
 ```
+
+## Example Output From Running Application
+![alt text](https://i.ibb.co/brvJPMr/Screenshot-2020-10-25-at-19-45-17.png)
 
