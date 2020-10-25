@@ -32,6 +32,8 @@ This project is simple Lorem ipsum dolor generator.
 	
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+$ git clone https://github.com/ozoesono/invoicegenerator.git
+$ Go into the invoicegenerator folder and run:
+$ ./gradlew jar
+$ ./gradlew jar
+
