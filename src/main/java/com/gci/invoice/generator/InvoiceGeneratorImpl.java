@@ -1,5 +1,6 @@
 package com.gci.invoice.generator;
 
+import com.gci.invoice.commons.Errors;
 import com.gci.invoice.commons.Infos;
 import com.gci.invoice.model.Invoice;
 import com.gci.invoice.model.SmsCdr;
@@ -46,7 +47,11 @@ public class InvoiceGeneratorImpl implements InvoiceGenerator {
             List<SmsCdr> tenantSmsCdrList = smsCdrList.stream()
                     .filter(smsCdr -> smsCdr.getTenantName().equals(tenantName))
                     .collect(Collectors.toList());
-            generateInvoice(tenantSmsCdrList);
+            if (tenantSmsCdrList.size() < 1) {
+                LOGGER.severe(String.format(Errors.CUSTOMER_DOES_NOT_EXIST, tenantName));
+            } else {
+                generateInvoice(tenantSmsCdrList);
+            }
         }
         LOGGER.info(Infos.INVOICE_GENERATION_END);
         return true;

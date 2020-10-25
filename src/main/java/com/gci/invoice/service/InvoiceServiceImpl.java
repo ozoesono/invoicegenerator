@@ -1,23 +1,25 @@
 package com.gci.invoice.service;
 
 import com.gci.invoice.commons.Constants;
+import com.gci.invoice.commons.Errors;
 import com.gci.invoice.model.Invoice;
 import com.gci.invoice.model.InvoiceItem;
 import com.gci.invoice.model.SmsCdr;
+import com.gci.invoice.parser.SmsCdrParserImpl;
 import org.apache.logging.log4j.util.Strings;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 /**
  * This class is the default implementation of {@link InvoiceService}.
  */
 public class InvoiceServiceImpl implements InvoiceService {
-
-    final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(Constants.DATE_TIME_FORMAT);
+    private static final DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(Constants.DATE_TIME_FORMAT);
 
     @Override
     public Invoice createInvoice(List<SmsCdr> smsCdrList) {
