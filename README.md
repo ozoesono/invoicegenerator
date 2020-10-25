@@ -19,7 +19,7 @@ The first thing that is done, is to parse the SMS CDR file (This is a CSV file).
 
 The next component of interest, is the InvoiceService. This component creates a Java model - Invoice, from the list of SmsCdrs created by the SmsCdrParser. The invoice acts as a wrapper for our final outputted invoice, as it has all the details needed to create our final invoice. The InvoiceService also does all the cost calculations (Note the calculation was not externalised to another component, as the InvoiceService was pretty minimalist in its current functionality, and so we decided to keep the cost calculation functionality in the InvoiceService).
 
-The last key component is the InvoiceGenerator. This component does the actual creation of the HTML Invoice for the customers. This component utilises the Freemarker Library for the creation of the final invoice outputs.
+The last key component is the InvoiceGenerator. This component does the actual creation of the HTML Invoices for the customers. This component utilises the Freemarker Library for the creation of the final invoice outputs.
 
 	
 ## Technologies Used
