@@ -10,7 +10,7 @@
 Designing an application that can generate invoices from SMS feeder files.
 
 ## Solution Design
-Try this markdown: ![alt text](https://ibb.co/kmq5Sz5)
+Try this markdown: ![alt text](https://i.ibb.co/qJm7rh7/Screenshot-2020-10-25-at-18-45-01.png)
 	
 ## Technologies Used
 Project is created with:
