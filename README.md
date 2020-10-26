@@ -60,7 +60,7 @@ This will create four HTML invoices, one for each Tenant. This can be seen in th
 ```
 invoicegenerator/src/main/out
 ```
-You can run the application to create invoices for any specific customer(s) you want. For example you can change the command to create an invoice for only one customer like this:
+You can run the application to create invoices for any specific customer(s) you want. For example, you can change the command to create an invoice for only one customer like this:
 ```
 $ java -jar build/libs/InvoiceGenerator-1.0.jar "Tenant 3"
 ```
