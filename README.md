@@ -60,6 +60,11 @@ This will create four HTML invoices, one for each Tenant. This can be seen in th
 ```
 invoicegenerator/src/main/out
 ```
+You can run the application to create invoices for any specific customer(s) you want. For example you can change the command to create an invoice for only one customer like this:
+```
+$ java -jar build/libs/InvoiceGenerator-1.0.jar "Tenant 3"
+```
+If the customer does not exist in the SMS CDR file, the application will log an error and not generate an invoice for that customer.
 
 ## Example Output From Running Application
 ![alt text](https://i.ibb.co/C2Kf6S3/Screenshot-2020-10-25-at-21-10-57.png)
