@@ -66,6 +66,7 @@ invoicegenerator/src/main/out
 
 ## Improvements
 * The location of the output folder can be made to be configurable using for instance, Apache Commons Configuration. This will thus make the application more configurable as we would be able to externalise the output location to a properties file. This would also aid in testing, as it would make it easier to configure the output location for unit tests. 
+* I could have more test cases for the main classes I have. These tests would include testing for invalid data, incorrect SMS CDR file formats, amongst others. Again, I have made the assumption it is a bit out of scope and so have not written these kinds of tests.
 
 I could have done this but didn't want to make the application more complicated for its intended purpose.
 
